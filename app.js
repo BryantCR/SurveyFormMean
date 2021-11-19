@@ -23,7 +23,7 @@ app.post("/result", function(req, res){
     res.redirect("results");
 })
 
-app.get("/result", function(req, res){
+app.get("/results", function(req, res){
     res.render("results", {results:req.session.results});
 })
 
