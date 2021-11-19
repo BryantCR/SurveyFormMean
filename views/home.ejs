@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <form action="/result" method="POST">
+                    <div>
+                        <label>
+                            Your Name
+                        </label>
+                        <input class="formInput" type="text" name="name">
+                    </div>
+                    <div>
+                        <label>
+                            Dojo Location
+                        </label>
+                        <select class="formSelect" name="location">
+                            <option value="Chicago">Chicago</option>
+                            <option value="Seattle">Seattle</option>
+                            <option value="New York">New York</option>
+                            <option value="Texas">Texas</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>
+                            Favorite Language:
+                        </label>
+                        <select class="formSelect" name="language">
+                            <option value="Java">Java</option>
+                            <option value="MEAN">MEAN</option>
+                            <option value="C++">C++</option>
+                            <option value="Python">Python</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>
+                            Comment (optional):
+                        </label>
+                        <textarea name="comment" id="" cols="" rows=""></textarea>
+                    </div>
+                    <input class="btn" type="submit" value="Submit">
+                </form>
+            </div>
+        </main>
+        
+    </body>
+</html>
